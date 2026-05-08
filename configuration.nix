@@ -26,8 +26,8 @@
   users.users.root.openssh.authorizedKeys.keys =
   [
     # change this to your ssh key
-    "# CHANGE"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICdCFYiE0kiQzh6Alo/m5lXqkFZci41p2g0N9RpBP2z3 devyn@devynfreet.com"
   ] ++ (args.extraPublicKeys or []); # this is used for unit-testing this module and can be removed if not needed
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.11";
 }
